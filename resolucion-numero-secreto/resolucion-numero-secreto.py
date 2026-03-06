@@ -9,8 +9,10 @@ print("=" * 50) # Imprime 50 signos de igual seguidos, crea una línea separador
 
 while True:
     intento_usuario = int(input("Por favor indíqueme un número entero entre 1 y 100: "))
+    if intento_usuario < 1 or intento_usuario > 100:
+        print("Ese número no es correcto, por favor escribe un número entre 1 y 100: ") # En caso de que el usuario escriba un número fuera de rango, solicitamos de nuevo el número.
+        continue
     contador += 1
-    
     if intento_usuario < numero_secreto:
         print("Más alto")
     elif intento_usuario > numero_secreto:

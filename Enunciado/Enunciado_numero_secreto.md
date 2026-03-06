@@ -38,8 +38,9 @@ Las variables sin tildes
 1. Generar numero_secreto entre 1 y 100 y guardarlo como variable   
 2. Crear un contador de intentos y lo inicializamos, le damos valor_inicial = 0   
 3. Dar la bienvenida al usuario   
-4. Crear un bucle mientras que el usuario no haya acertado el numero_secreto   
-	4.1.  Solicitar al usuario un número entre 1 y 100 input()   
+4. Crear un bucle mientras que el usuario no haya acertado el numero_secreto.   
+	4.1.  Solicitar al usuario un número entre 1 y 100 input().
+		4.1.1 Si el número del usuario está fuera de rango, solicitamos de nuevo el número.   
 	4.2. Condición: repetimos el código mientras se cumpla o no se cumpla esa condición -> `if elif else`:    
 		4.2.1. Si el usuario no escribe un número válido, se le solicita de nuevo.   
 		4.2.2. SI intento < numero_secreto:   
@@ -56,7 +57,8 @@ Las variables sin tildes
 2. Crear un contador de intentos y lo inicializamos, le damos valor_inicial = 0 | `contador = 0`   
 3. Dar la bienvenida al usuario | `print=("Bienvenido a la búsqueda del número secreto. ¡Buena suerte!")`   
 4. Crear un bucle mientras que el usuario no haya acertado el numero_secreto | `while True`   
-	4.1. Solicitar al usuario un número entre 1 y 100 input() | `intento = int(input("Por favor indíqueme un número entero entre 1 y 100: "))`  
+	4.1. Solicitar al usuario un número entre 1 y 100 input() | `intento = int(input("Por favor indíqueme un número entero entre 1 y 100: "))`   
+	4.1.1. Si el número del usuario está fuera de rango, solicitamos de nuevo el número y continuamos. |`if`, `continue`
 	4.2. Condición: repetimos el código mientras se cumpla o no se cumpla esa condición -> `if elif else`:   
         4.2.1. Si el usuario no escribe un número válido, se vuelve a pedir   
 		4.2.2 - SI intento `<` numero_secreto:    
